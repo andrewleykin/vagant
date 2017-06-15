@@ -1,3 +1,7 @@
+Лейкин Андрей Романович
+WebAdvanced 062017
+group-sobakar
+
 # Учебная сборка Loftschool
 
 > Сборка работает на gulp версии 4.0. 
