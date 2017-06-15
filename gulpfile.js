@@ -28,6 +28,7 @@ $.gulp.task('default', $.gulp.series(
     'js:process',
     'copy:image',
     'css:foundation',
+    'sprite-create',
     'sprite:svg'
   ),
   $.gulp.parallel(
