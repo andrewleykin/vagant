@@ -4,7 +4,8 @@
 
 module.exports = function () {
 	$.gulp.task('sprite:create', function () {
-	  var spriteData = $.gulp.src('source/sprite/*.png').pipe($.gp.spritesmith({
+	  var spriteData = $.gulp.src('source/sprite/*.{png,gif}')
+	  .pipe($.gp.spritesmith({
 		imgName: 'sprite.png',	// имя картинки
 		cssName: 'sprite.scss',	// имя файла стилей
 	  	algorithm: 'left-right',
