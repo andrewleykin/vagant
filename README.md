@@ -40,9 +40,9 @@ module.exports = function () {
 		.pipe($.gp.spritesmith({
 			imgName: 'sprite.png',	// имя картинки
 			cssName: 'sprite.scss',	// имя файла стилей
-	  	algorithm: 'left-right',
-      	padding: 20
-	  }));
+	  		algorithm: 'left-right',
+      			padding: 20
+	  	}));
 	
 	  // Прописываем путь для картинки
 	  var imgStream = spriteData.img
@@ -97,7 +97,7 @@ gulpfile.js
 ```js
 $.gulp.task('default', $.gulp.series(
   'clean',
-	'sprite:create',
+  'sprite:create',
   $.gulp.parallel(
     'copy:font'
   )
