@@ -18,7 +18,7 @@ mkdir source/{fonts,sprite}
 ```
 - Созданы файлы
 ```bash
-touch gulp/tasks/{sprite.create.js,copy.font.js}
+touch gulp/tasks/{sprite.create.js,copy.fonts.js}
 ```
 - Установлен плагин [gulp.spritesmith] для создания `.png` и `.gif` спрайтов
 ```bash
@@ -66,9 +66,9 @@ global.$ = {
 };
 ```
 
-- Для копирования шрифтов следующий код добавлен в файл `copy.font.js`:
+- Для копирования шрифтов следующий код добавлен в файл `copy.fonts.js`:
 
-copy.font.js
+copy.fonts.js
 ```js
 'use strict';
 
@@ -86,7 +86,7 @@ tasks.js
 
 ```js
 module.exports = [
-  './gulp/tasks/copy.font.js',
+  './gulp/tasks/copy.fonts.js',
   './gulp/tasks/sprite.create.js'
 ];
 ```
@@ -99,7 +99,7 @@ $.gulp.task('default', $.gulp.series(
   'clean',
   'sprite:create',
   $.gulp.parallel(
-    'copy:font'
+    'copy:fonts'
   )
 ));
 ```
@@ -111,7 +111,7 @@ watch.js
 module.exports = function() {
   $.gulp.task('watch', function() {
     $.gulp.watch('./source/sprite/**/*.{png,gif}', $.gulp.series('sprite:create'));
-    $.gulp.watch('./source/fonts/**/*.*', $.gulp.series('copy:font'));
+    $.gulp.watch('./source/fonts/**/*.*', $.gulp.series('copy:fonts'));
   });
 };
 ```
