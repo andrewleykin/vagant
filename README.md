@@ -21,7 +21,7 @@ mkdir source/{fonts,sprite}
 ```bash
 touch gulp/tasks/{sprite.create.js,copy.fonts.js}
 ```
-- Установлен плагин [gulp.spritesmith] для создания `.png` и `.gif` спрайтов
+- Установлен плагин [gulp.spritesmith] для создания `.png` спрайтов
 ```bash
 npm i -D gulp.spritesmith
 ```
@@ -37,12 +37,12 @@ sprite.create.js
 
 module.exports = function () {
 	$.gulp.task('sprite:create', function () {
-	  var spriteData = $.gulp.src('source/sprite/*.{png,gif}')
+	  var spriteData = $.gulp.src('source/sprite/*.png')
 		.pipe($.gp.spritesmith({
 			imgName: 'sprite.png',	// имя картинки
 			cssName: 'sprite.scss',	// имя файла стилей
 	  		algorithm: 'left-right',
-      			padding: 20
+      		padding: 20
 	  	}));
 	
 	  // Прописываем путь для картинки
