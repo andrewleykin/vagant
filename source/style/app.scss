@@ -1,5 +1,22 @@
-body {
-  margin: 0;
-}
+// Подключение файлов SCSS
+
+// Основные файлы
+
+// Миксины
+@import 'base/mixin';
+
+// Переменные
+@import 'base/var';
+
+/* ШРИФТЫ */
+@import 'base/fonts';
+
+/* Настройки */
+@import 'base/base';
+
+
+
+// Компоненты
+
 
 @import 'common/greating';
