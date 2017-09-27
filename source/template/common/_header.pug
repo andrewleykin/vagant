@@ -1,0 +1,21 @@
+header.header
+	.container
+		.header__top
+			.header__logo
+			.header__time
+				+icon('time')
+				span.header__text режим работы без выходных
+				span.header__text.header__text--bold ТЦ Мебель с 10:00-20:00
+				span.header__text.header__text--bold ТЦ Стройматериалы с 9:00-19:00
+			.header__phone
+				+icon('phone')
+				span.header__text контактные номера
+				a.header__text.header__text--bold(href="tel:+74959263232") +7 (495) 926-32-32
+				a.header__text.header__text--bold(href="tel:+74967575802") +7 (4967) 57-58-02
+		.header__bottom
+			nav.menu
+				ul.menu__list
+					each val in ['мебель', 'стройматериалы','акции','новости','сервис','о компании','контакты']
+						li.menu__item
+							a.menu__link(href="#")= val
+

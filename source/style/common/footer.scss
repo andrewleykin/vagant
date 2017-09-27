@@ -1,0 +1,42 @@
+.footer {
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+	.fa {
+		color: white;
+	}
+}
+.footer__text {
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 18px;
+}
+.footer__list {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__item {
+	margin-right: 10px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.footer__link {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: rgba(255,255,255,.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@extend .trs;
+	&:hover {
+		background: white;
+		.fa {
+			color: black;
+		}
+	}
+}
