@@ -77,8 +77,9 @@
 		margin-bottom: 20px;
 		.offer__img {
 			max-width: 60%;
+			width: 300px;
 			top: -60px;
-			left: 120px;
+			left: 150px;
 		}
 		.offer__text {
 			margin-left: 50px;
@@ -87,7 +88,7 @@
 		&:after {
 			width: 20px;
 			height: 100px;
-			right: 200px;
+			left: 150px;
 			bottom: -45px;
 		}
 	}
@@ -124,6 +125,7 @@
 		bottom: -35px;
 		left: -70px;
 		max-width: 145%;
+		width: 300px;
 		z-index: 5;
 	}
 	.offer__link {
@@ -147,6 +149,7 @@
 		.offer__img {
 			max-width: 120%;
 			left: -20px;
+			width: 300px;
 		}
 		.offer__text {
 			font-size: 32px;
@@ -200,6 +203,7 @@
 		top: -50px;
 		right: -60px;
 		max-width: 110%;
+		width: 300px;
 	}
 	.offer__text {
 		margin-left: 185px;
