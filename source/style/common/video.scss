@@ -1,8 +1,33 @@
 .video {
 	margin-bottom: 100px;
+	@media(max-width:700px) {
+		margin-bottom: 70px;
+	}
 }
 
 .video__row {
 	display: flex;
 	justify-content: space-between;
+	@media (max-width: 700px) {
+		flex-direction: column;
+	}
+}
+
+.video__block {
+	width: 45%;
+	height: 300px;
+	iframe {
+		height: 100%;
+	}
+	@media(max-width:960px) {
+		height: 200px;
+	}
+	@media (max-width: 700px) {
+		width: 100%;
+		margin-bottom: 20px;
+		height: 300px;
+	}
+	@media (max-width: 480px) {
+		height: 200px;
+	}
 }
