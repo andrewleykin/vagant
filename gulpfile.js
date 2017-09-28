@@ -11,6 +11,7 @@ global.$ = {
   },
   gulp: require('gulp'),
   del: require('del'),
+  gcmq: require('gulp-group-css-media-queries'),
   merge: require('merge-stream'),
   browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')()
