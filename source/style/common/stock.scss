@@ -19,11 +19,6 @@
 			left: 0;
 		}
 	}
-	&:last-child {
-		.stock__text {
-			right: 0;
-		}
-	}
 	@media(max-width:700px) {
 		width: 100%;
 		margin-bottom: 20px;
@@ -31,6 +26,16 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+}
+.stock__item--left {
+	.stock__text {
+		left: 0;
+	}
+}
+.stock__item--right {
+	.stock__text {
+		right: 0;
 	}
 }
 
